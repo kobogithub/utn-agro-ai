@@ -2,6 +2,8 @@
 
 Repositorio de contenido de módulos en el programa "Desarrollo Avanzado de Soluciones de IA"
 
+**Autores:** Kevin Barroso, Matías Barreto
+
 ## 📋 Contenido del Curso
 
 ### Módulo 1: Introducción a LLMs
