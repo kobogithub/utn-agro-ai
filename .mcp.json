@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "agro": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SQLALCHEMY_DATABASE_URL=sqlite:///./data/agro_api.db",
+        "-v",
+        "/home/kobo/projects/me/utn-agro-ai/server-api/data:/app/data",
+        "agro-mcp:latest"
+      ],
+      "env": {}
+    }
+  }
+}

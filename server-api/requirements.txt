@@ -1,0 +1,13 @@
+# FastAPI and server
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# Database
+sqlalchemy==2.0.36
+
+# Validation
+pydantic[email]==2.10.3
+
+# MCP Server
+mcp==1.4.1
+httpx==0.28.1

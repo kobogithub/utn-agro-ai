@@ -1,0 +1,22 @@
+---
+services:
+  agro-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agro-mcp
+    stdin_open: true
+    tty: true
+    volumes:
+      # Shared database with server-api
+      - ../server-api/data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SQLALCHEMY_DATABASE_URL=sqlite:///./data/agro_api.db
+    restart: unless-stopped
+    networks:
+      - agro-network
+
+networks:
+  agro-network:
+    driver: bridge

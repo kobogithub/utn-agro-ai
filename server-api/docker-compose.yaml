@@ -1,0 +1,33 @@
+---
+services:
+  agro-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agro-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist SQLite database
+      - ./data:/app/data
+      # Mount source code for development (optional - comment out for production)
+      - ./:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SQLALCHEMY_DATABASE_URL=sqlite:///./data/agro_api.db
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - agro-network
+
+networks:
+  agro-network:
+    driver: bridge
+
+volumes:
+  db-data:
