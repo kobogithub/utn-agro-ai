@@ -3,6 +3,7 @@ from typing import List, Optional
 import models
 import schemas
 
+# CRUD : Create Read Update Delete operations
 
 # ========== FARMER CRUD ==========
 def get_farmer(db: Session, farmer_id: int) -> Optional[models.Farmer]:
