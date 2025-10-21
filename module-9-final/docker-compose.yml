@@ -1,0 +1,24 @@
+services:
+  gemini-spatial:
+    build: .
+    container_name: gemini-spatial-app
+    volumes:
+      - .:/app
+      - ./output:/app/output
+      - ./logs:/app/logs
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-your_api_key_here}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+    working_dir: /app
+    command: python gemini_spatial_standalone.py
+    
+    # Alternative: Interactive mode for debugging
+    # command: tail -f /dev/null
+    
+    # Alternative: Run specific example
+    # command: python -c "
+    #   from gemini_spatial_standalone import detectar_objetos; 
+    #   detectar_objetos('images/Vegetables.jpg', 'Detecta las verduras')
+    # "
