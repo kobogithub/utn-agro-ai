@@ -1,0 +1,23 @@
+[
+  {
+    "commodity": "Soja",
+    "tipo": "VENTA",
+    "urgencia": "ALTA",
+    "accion": "Vender el stock disponible",
+    "fundamento": "Precio en percentil 100%, cerca de máximos históricos"
+  },
+  {
+    "commodity": "Maíz",
+    "tipo": "VENTA",
+    "urgencia": "ALTA",
+    "accion": "Vender el stock disponible",
+    "fundamento": "Precio en percentil 100%, cerca de máximos históricos"
+  },
+  {
+    "commodity": "Trigo",
+    "tipo": "VENTA",
+    "urgencia": "ALTA",
+    "accion": "Vender el stock disponible",
+    "fundamento": "Precio en percentil 100%, cerca de máximos históricos"
+  }
+]

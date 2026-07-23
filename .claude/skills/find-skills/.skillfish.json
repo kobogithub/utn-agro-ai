@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "find-skills",
+  "owner": "echoleesong",
+  "repo": "claude-skills-plugin",
+  "path": "skills/find-skills",
+  "branch": "main",
+  "sha": "bd7446ab7a8638401e243bf3ac3095e71266403d",
+  "source": "manual"
+}

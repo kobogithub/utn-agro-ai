@@ -1,0 +1,18 @@
+{
+  "Soja": {
+    "precio": 12.3825,
+    "variacion": 1.2883435582822138
+  },
+  "Maíz": {
+    "precio": 4.8425,
+    "variacion": 1.947368421052637
+  },
+  "Trigo": {
+    "precio": 7.0625,
+    "variacion": 4.08990420044215
+  },
+  "Dólar": {
+    "precio": 1482.25,
+    "variacion": 0.0
+  }
+}

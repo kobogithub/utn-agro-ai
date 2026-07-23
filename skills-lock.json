@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "developing-with-streamlit": {
+      "source": "streamlit/agent-skills",
+      "sourceType": "github",
+      "skillPath": "developing-with-streamlit/SKILL.md",
+      "computedHash": "9f8006c37398b5c6a27043bdfe3a25d4aafdfb53413618c88d2c978932f9d08e"
+    }
+  }
+}

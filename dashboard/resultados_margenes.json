@@ -1,0 +1,17 @@
+[
+  {
+    "cultivo": "Soja",
+    "margen_bruto_usd": 189.1250000000001,
+    "margen_porcentaje": 30.547143145568356
+  },
+  {
+    "cultivo": "Maíz",
+    "margen_bruto_usd": -21.741071428571445,
+    "margen_porcentaje": -2.79355245798199
+  },
+  {
+    "cultivo": "Trigo",
+    "margen_bruto_usd": 29.6875,
+    "margen_porcentaje": 5.604719764011799
+  }
+]
