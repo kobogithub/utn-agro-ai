@@ -9,5 +9,5 @@ sqlalchemy==2.0.36
 pydantic[email]==2.10.3
 
 # MCP Server
-mcp==1.4.1
+mcp==1.28.1
 httpx==0.28.1
